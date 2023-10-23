@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Learning javascript</title>
+  </head>
+  <body>
+    <script>
+      x1 = prompt("Nhap gia tri x1 = ");
+      x2 = prompt("Nhap gia tri x2= ");
+      x3 = prompt("Nhap gia tri x3= ");
+      x4 = prompt("Nhap gia tri x4= ");
+      x5 = prompt("Nhap gia tri x5= ");
+      if (x1 > x2 && x1 > x3 && x1 > x4 && x1 > x5) {
+        document.writeln("Gia tri max la: " + x1);
+      }
+      if (x2 > x1 && x2 > x3 && x2 > x4 && x2 > x5) {
+        document.writeln("Gia tri max la: " + x2);
+      }
+      if (x3 > x1 && x3 > x2 && x3 > x4 && x3 > x5) {
+        document.writeln("Gia tri max la: " + x3);
+      }
+      if (x4 > x1 && x4 > x2 && x4 > x3 && x4 > x5) {
+        document.writeln("Gia tri max la: " + x4);
+      }
+      if (x5 > x1 && x5 > x2 && x5 > x3 && x5 > x4) {
+        document.writeln("Gia tri max la: " + x5);
+      }
+      document.write(`<br>`);
+      //bai2: giai phuong trinh bac nhat
+      let a = Math.floor(Math.random() * 100 + 1);
+      let b = Math.floor(Math.random() * 100 + 1);
+      if (a == 0) {
+        if (b == 0) {
+          document.writeln("phuong trinh vo so nghiem");
+        } else {
+          document.writeln("phuong trinh vo nghiem");
+        }
+      } else {
+        x = -b / a;
+        document.writeln("phuong trinh co nghiem duy nhat la: " + x);
+      }
+      document.write(`<br>`);
+      //bai3:giai phuong trinh bac 2
+      var x;
+      x = prompt(`Enter x `);
+      var y;
+      y = prompt(`Enter y`);
+      var z;
+      z = prompt(`Enter z `);
+      var d = y * y - 4 * x * z;
+      if (x == 0) {
+        if (y == 0) {
+          if (z == 0) {
+            document.write("All are solutions of m");
+          } else {
+            document.write(`Can't solve for m`);
+          }
+        } else {
+          document.write("m = " + -z / y);
+        }
+      } else if (d >= 0) {
+        document.write(`m1 = ` + (-y + Math.sqrt(d)) / (2 * x));
+        document.write(`<br>`);
+        document.write(`m2 = ` + (-y - Math.sqrt(d)) / (2 * x));
+      } else {
+        document.write(`Can't solve for m`);
+      }
+      document.write(`<br>`);
+      //bai4:tinh giai thua
+
+      n = prompt("nhap vao so n =");
+      result = 1;
+      for (i = 1; i <= n; i++) {
+        result = i * result;
+      }
+
+      document.writeln("giai thua tu 1 den" + n + " la:" + result);
+      document.write(`<br>`);
+      //bai5:in ra tam giac hinh sao
+      N = prompt("Nhap vao so dong : ");
+      var i;
+      var j;
+      for (j = 1; j <= N; j++) {
+        document.write(`<br>`);
+        for (i = 1; i <= j; i++) {
+          document.write(`*`);
+        }
+      }
+      document.write(`<br>`);
+      //bai6:tao may tinh
+      function sum(x, y) {
+        sum = x + y;
+        return sum;
+      }
+      function sub(x, y) {
+        sub = x - y;
+        return sub;
+      }
+      function mul(x, y) {
+        mul = x * y;
+        return mul;
+      }
+      function div(x, y) {
+        div = x / y;
+        return div;
+      }
+      num1 = parseInt(prompt("Enter number one"));
+      num2 = parseInt(prompt("Enter number two"));
+      document.write("Sum of two numbers: " + sum(num1, num2) + "<br>");
+      document.write("Difference of two numbers: " + sub(num1, num2) + "<br>");
+      document.write("Product of two numbers: " + mul(num1, num2) + "<br>");
+      document.write("Quotient of two numbers: " + div(num1, num2) + "<br>");
+    </script>
+  </body>
+</html>
