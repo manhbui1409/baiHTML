@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    >
+    <title>Page Title</title>
+  </head>
+  <body>
+    <script>
+      // Nhập N thông qua hàm prompt
+      var N = parseInt(prompt("Nhập số phần tử của mảng:"));
+
+      // Khai báo mảng t
+      var t = [];
+
+      // Nhập N phần tử cho mảng t thông qua hàm prompt
+      for (var i = 0; i < N; i++) {
+        var element = parseInt(prompt("Nhập phần tử thứ " + (i + 1) + ":"));
+        t.push(element);
+      }
+
+      // Sắp xếp các phần tử trong mảng theo thứ tự tăng dần
+      t.sort(function (a, b) {
+        return a - b;
+      });
+
+      // Hiển thị các phần tử trong mảng (sử dụng alert)
+      var message = "Các phần tử trong mảng t: " + t.join(", ");
+      alert(message);
+
+      // Tính tổng các phần tử trong mảng
+      var sum = 0;
+      for (var i = 0; i < t.length; i++) {
+        sum += t[i];
+      }
+
+      // Hiển thị kết quả sử dụng alert
+      alert("Tổng các phần tử trong mảng: " + sum);
+    </script>
+  </body>
+</html>

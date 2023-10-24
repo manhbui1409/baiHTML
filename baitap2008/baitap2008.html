@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>bai tap2008</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  </head>
+  <body>
+    <script>
+      // Mảng chứa danh sách tên sinh viên
+      var names = [
+        "John",
+        "Emma",
+        "Liam",
+        "Olivia",
+        "Noah",
+        "Ava",
+        "William",
+        "Sophia",
+        "James",
+        "Isabella",
+        "Oliver",
+        "Mia",
+        "Benjamin",
+        "Charlotte",
+        "Jacob",
+        "Amelia",
+        "Ethan",
+        "Harper",
+        "Michael",
+        "Evelyn",
+      ];
+      var anaddress = [
+        "Hà Nội",
+        "Hồ Chí Minh",
+        "Đà Nẵng",
+        "Hải Phòng",
+        "Cần Thơ",
+        "Bình Dương",
+        "Đồng Nai",
+        "Khánh Hòa",
+        "Hà Tĩnh",
+        "Quảng Ninh",
+        "Thanh Hóa",
+        "Bà Rịa - Vũng Tàu",
+        "Kiên Giang",
+        "Lâm Đồng",
+        "Bình Thuận",
+        "Nghệ An",
+        "Thừa Thiên Huế",
+        "Đắk Lắk",
+        "Sóc Trăng",
+        "Lào Cai",
+      ];
+
+      // Mảng chứa danh sách sinh viên ngẫu nhiên
+      var randomStudents = [];
+
+      // Tạo ngẫu nhiên danh sách sinh viên
+      for (var i = 0; i < 20; i++) {
+        var randomIndex = Math.floor(Math.random() * names.length);
+        var name = names[randomIndex];
+        var age = Math.floor(Math.random() * 10) + 18; // Tuổi từ 18 đến 27
+        var addressIndex = Math.floor(Math.random() * anaddress.length);
+        var address = anaddress[addressIndex];
+        var email = name.toLowerCase() + "@gmail.com";
+
+        var student = {
+          name: name,
+          age: age,
+          address: address,
+          email: email,
+        };
+
+        randomStudents.push(student);
+      }
+
+      // Hiển thị danh sách sinh viên ngẫu nhiên
+      console.log("Danh sách sinh viên ngẫu nhiên:");
+      console.log(randomStudents);
+    </script>
+    <script type="text/javascript">
+      function showStudents() {
+        for (var i = 0; i < randomStudents.length; i++) {
+          var student = randomStudents[i];
+          document.writeln(`
+            <tr> 
+              <td>${i + 1}</td>
+              <td>${student.name}</td>
+              <td>${student.age}</td>
+              <td>${student.address}</td>
+              <td>${student.email}</td>
+            </tr>
+          `);
+        }
+      }
+    </script>
+    <table border="0.6">
+      <tr>
+        <th>STT</th>
+        <th>Tên</th>
+        <th>Tuổi</th>
+        <th>Địa chỉ</th>
+        <th>Email</th>
+      </tr>
+      <tbody>
+        <script type="text/javascript">
+          showStudents();
+        </script>
+      </tbody>
+    </table>
+  </body>
+</html>
