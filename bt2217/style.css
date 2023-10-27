@@ -1,0 +1,84 @@
+
+.header .left{
+    
+    color: white;
+    width: 10%;
+    float: left;
+    margin :0 auto;
+   
+}
+.header .left h3{
+    background: red;
+}
+.header .right{
+    margin-left: 0px;
+    width: 90%;
+    color: black;
+    font-size: 20px;
+    float: left;
+    
+    text-align: center;
+    
+    }
+.main-body .menu ul{
+    background-color: blue;
+    padding-left: 500px;
+    margin: 0px;
+    width: 80%;
+    display:flex;
+    list-style: none;
+    float: left;
+    text-align: center;
+}
+.main-body  .menu ul li {
+    
+    padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-right: solid white 1px;
+	cursor: pointer;
+	font-weight: bold;
+    color: white;
+}
+.main-body  .menu ul li:hover{
+    background-color:orange;
+}
+.content .left{
+    
+    color:black;
+    font: 16px;
+    width: 65%;
+    float: left;
+}
+.content .right{
+    color:black;
+    font: 16px;
+    width: 25%;
+    float: left;
+    border:5px solid black;
+    
+}
+.content .right ul li{
+    list-style: none;
+}
+.form{
+	display: flex;
+	width: 100%;
+	margin-bottom: 5px; 
+}
+.form label{
+	width: 25%;
+	float: left;
+	text-align: left;
+	font-weight: bold;
+	padding: 5px;
+}
+.main-body .main .all-right{
+    color:black;
+    font: 16px;
+    width: 25%;
+    float: left;
+    border:5px solid black;
+}
+
