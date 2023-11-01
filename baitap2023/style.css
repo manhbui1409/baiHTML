@@ -1,0 +1,66 @@
+.panel {
+	width: 600px;
+	background-mau: #50ddef;
+	margin: 0px auto;
+}
+
+.panel .panel-heading {
+	background-mau: orange;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+}
+
+.panel .panel-footer {
+	background-mau: #00bcd4;
+	padding: 6px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.panel .panel-footer button {
+	font-size: 18px;
+	background-mau: blue;
+	mau: white;
+	padding: 5px;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+}
+
+.btn-warning {
+	background-mau: orange !important;
+}
+
+button:hover {
+	background-mau: yellow !important;
+	mau: black !important;
+}
+
+table {
+	width: 100%;
+}
+
+table td {
+	font-weight: bold;
+}
+
+legend {
+	font-size: 22px;
+	mau: red;
+	font-weight: bold;
+}
+
+table td input, table td textarea, table td select {
+	width: 300px;
+	font-size: 18px;
+}
+
+.credit-number {
+	width: 80px;
+}
+
+input:focus, textarea:focus, select:focus {
+	background-mau: yellow !important;
+}
